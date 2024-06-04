@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
+    <title>INT C144</title>
+</head>
+<body>
+    <center>
+    <h1>Summer Camp C16</h1>
+    <hr>
+    <h3>Script Cae Objeto</h3>
+    <textarea cols='90' rows='9' id="codigo">
+        local touch
+        function alTocar(part)
+	        game.Workspace.Plato.BrickColor=BrickColor.new(255,0,0)
+	        local numeroAzar=math.random(1,4)
+	        game.Workspace.Grupo:FindFirstChild(tostring(numeroAzar)).Anchored=false
+	        touch:Disconnect()
+        end
+        touch=script.Parent.Touched:Connect(alTocar)
+
+        </textarea><br>
+        <button type="button" id="copyClip" data-clipboard-target="#codigo">Copiar</button>
+        <script src="clipboard.min.js"></script>
+
+    <br><br>
+    <hr>
+    </center>
+    
+</body>
+</html>
